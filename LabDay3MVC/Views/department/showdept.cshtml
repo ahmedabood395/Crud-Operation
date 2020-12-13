@@ -1,0 +1,21 @@
+﻿@model List<LabDay3MVC.Models.Department>
+@{
+    ViewBag.Title = "Department Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="alert-info table-active m-4">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Loction</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.loc</td>
+        </tr>
+    }
+</table>

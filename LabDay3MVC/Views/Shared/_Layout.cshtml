@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/content/Final_Project/bootstrap.css">
+    <link rel="stylesheet" href="~/content/Final_Project/index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary font-weight-bold" href="#"><img src="~/content/Final_Project/image/logo.jpg" height="40">Mala3eb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        @Html.ActionLink("Employee", "showemp", "employee",null,new { @class= "nav-link" });
+                        @*<a class="nav-link" href="#">Home</a>*@
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Department", "showdept", "department",null, new { @class = "nav-link" });
+
+                        @*<a class="nav-link" href="#">About Us</a>*@
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Project", "showpro", "project",null, new { @class = "nav-link" });
+
+                        @*<a class="nav-link" href="#">Contact</a>*@
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign UP</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <!---->
+ @RenderBody()
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: silver;margin-top: 70px;">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Mala3b Content</h5>
+                    <p>Our stadium is an existing project in cooperation with the Ministry of Education with the Ministry of State for Youth Affairs and cooperative societies to exploit school playgrounds (Ministry of Education) during the evening period in order to provide the opportunity for the largest possible number of young people to practice football, in order to benefit from the stadiums, and it supervises the management of the playgrounds cooperative societies for a fee Symbolic to reserve the pole</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Policy and privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Reservation policy</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Contact us</h5>
+                    <span>+6563264611</span>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="#"> Mala3b.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="~/content/Final_Project/jquery.js"></script>
+    <script src="~/content/Final_Project/bootstrap.bundle.js"></script>
+    <script src="~/content/Final_Project/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@model List<LabDay3MVC.Models.Employee>
+@{
+    ViewBag.Title = "Employee Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.ActionLink("Create Employee","add","employee",null, new { @class= "btn btn-info m-4" })
+<br />
+<table class="alert-info table-active m-4">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>HireDate</th>
+        <th>Address</th>
+        <th>Salary</th>
+        <th>Dept_Name</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.hiredate</td>
+            <td>@item.address</td>
+            <td>@item.salary</td>
+            <td>@item.department.name</td>
+            <td>
+                @Html.ActionLink("Edit", "edit", "employee",new { id=item.id},null)|
+                @Html.ActionLink("Delete", "delete", "employee", new { id = item.id}, new { onclick = "return confirm('Are you sure delete " + item.name + "')" })</td>
+        </tr>
+    }
+</table>

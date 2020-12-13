@@ -1,0 +1,27 @@
+/*
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}*/
+
+body{
+    background-image: url("image/backgroundPhoto3.jpg");
+    background-size: cover;
+
+}
+.my-4 h5{
+    color:#fff;
+}
+
+.btn-success{
+    width:155px;
+}
+.navbar{
+    padding: .8rem;
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+.nav-link{
+    font-size: 1.1em !important;
+}
